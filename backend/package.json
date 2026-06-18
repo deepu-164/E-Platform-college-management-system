@@ -1,0 +1,47 @@
+{
+    "name":  "e-platform-backend",
+    "version":  "1.0.0",
+    "private":  true,
+    "type":  "module",
+    "engines":  {
+                    "node":  "\u003e=20"
+                },
+    "scripts":  {
+                    "dev":  "tsx watch src/server.ts",
+                    "build":  "tsc -p tsconfig.json",
+                    "start":  "node dist/src/server.js",
+                    "prisma:generate":  "prisma generate",
+                    "prisma:migrate":  "prisma migrate deploy",
+                    "prisma:migrate:dev":  "prisma migrate dev",
+                    "prisma:studio":  "prisma studio",
+                    "db:push":  "prisma db push",
+                    "db:seed":  "tsx prisma/seed.ts",
+                    "seed":  "npm run prisma:generate \u0026\u0026 npm run db:seed",
+                    "check":  "tsc --noEmit",
+                    "import:karnataka-colleges":  "tsx scripts/import-karnataka-colleges.ts",
+                    "cleanup:colleges":  "tsx scripts/cleanup-colleges.ts",
+                    "extract:kea-kcet-engineering":  "python scripts/sync_kea_kcet_engineering.py",
+                    "apply:kea-kcet-engineering":  "tsx scripts/apply-kea-kcet-engineering.ts"
+                },
+    "prisma":  {
+                   "seed":  "tsx prisma/seed.ts"
+               },
+    "dependencies":  {
+                         "@prisma/client":  "^6.6.0",
+                         "cors":  "^2.8.5",
+                         "dotenv":  "^16.4.5",
+                         "express":  "^4.21.2",
+                         "helmet":  "^8.1.0",
+                         "morgan":  "^1.10.0",
+                         "zod":  "^3.25.76"
+                     },
+    "devDependencies":  {
+                            "@types/cors":  "^2.8.17",
+                            "@types/express":  "^4.17.21",
+                            "@types/morgan":  "^1.9.9",
+                            "@types/node":  "^22.16.5",
+                            "prisma":  "^6.6.0",
+                            "tsx":  "^4.19.4",
+                            "typescript":  "^5.8.3"
+                        }
+}

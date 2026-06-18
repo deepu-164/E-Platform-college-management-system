@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>http://localhost:8080/</loc></url>
+  <url><loc>http://localhost:8080/landing</loc></url>
+  <url><loc>http://localhost:8080/login</loc></url>
+  <url><loc>http://localhost:8080/register</loc></url>
+  <url><loc>http://localhost:8080/dashboard</loc></url>
+  <url><loc>http://localhost:8080/colleges</loc></url>
+  <url><loc>http://localhost:8080/rank-predictor</loc></url>
+  <url><loc>http://localhost:8080/mock-exam</loc></url>
+  <url><loc>http://localhost:8080/blog</loc></url>
+  <url><loc>http://localhost:8080/certifications</loc></url>
+  <url><loc>http://localhost:8080/career</loc></url>
+  <url><loc>http://localhost:8080/chatbot</loc></url>
+</urlset>
